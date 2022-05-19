@@ -4,11 +4,12 @@ def is_palindrome(word):
     Arguments:
     word in a str format
     '''
+    word= word.lower()
     if word == word[::-1]:
         return True
     else: 
         return False
        
-result=is_palindrome('kajak')
+result=is_palindrome('Macam')
 print(result)
 help(is_palindrome)
