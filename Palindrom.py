@@ -1,15 +1,16 @@
-def is_palindrome(word):
+def is_palindrome(given):
     '''
     Function returning True/Fals value depending whether the word given is a palindrome or not
     Arguments:
     word in a str format
     '''
-    word= word.lower()
+    word = ""
+    for i in given:
+        if i.isalpha():
+            word += i.lower()
     if word == word[::-1]:
         return True
-    else: 
+    else:
         return False
-       
-result=is_palindrome('Macam')
+result=is_palindrome('Ada i w oplu żaba! – żul powiada')
 print(result)
-help(is_palindrome)
