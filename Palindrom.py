@@ -8,9 +8,6 @@ def is_palindrome(given):
     for i in given:
         if i.isalpha():
             word += i.lower()
-    if word == word[::-1]:
-        return True
-    else:
-        return False
+    return word== word[::-1]
 result=is_palindrome('Ada i w oplu żaba! – żul powiada')
 print(result)
